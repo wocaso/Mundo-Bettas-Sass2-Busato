@@ -1,0 +1,20 @@
+.card{
+
+    &:hover{
+        transform: scale(1.3);
+    }
+    
+}
+@mixin formatoTexto($color, $fuente) {
+    color: $color;
+    font-weight: $fuente;
+    
+}
+
+.tituloMix{
+    @include formatoTexto(rgb(19, 19, 18), bolder)
+}
+
+.textoMix{
+    @include formatoTexto(rgb(85, 85, 85), light)
+}

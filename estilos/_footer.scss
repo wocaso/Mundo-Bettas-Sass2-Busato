@@ -1,0 +1,17 @@
+footer{
+    margin-top: 20px;
+}
+
+
+$redes: (
+    facebook: rgb(99, 153, 224),
+    twitter: rgb(136, 219, 240),
+    instagram: rgb(235, 155, 130),
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
+
